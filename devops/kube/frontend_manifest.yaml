@@ -13,17 +13,19 @@ spec:
         app: forge-frontend
     spec:
       containers:
-      - name: forge-frontend
-        image: dajpearl/forge-frontend:latest
-        resources:
-          requests:
-            memory: "500Mi"
-            cpu: "100m"
-          limits:
-            memory: "1Gi"
-            cpu: "200m"
-        ports:
-        - containerPort: 3000
+        - name: forge-frontend
+          image: may24devopscontainers.azurecr.io/forge-frontend:latest
+          resources:
+            requests:
+              memory: "500Mi"
+              cpu: "100m"
+            limits:
+              memory: "1Gi"
+              cpu: "200m"
+          ports:
+          - containerPort: 3000
+      ImagePullSecrets:
+        - name: p3-team2-acr
 
 ---
 apiVersion: v1
@@ -35,7 +37,7 @@ spec:
   selector:
     app: forge-frontend
   ports:
-  - port: 3000
-    name: frontend
-    protocol: TCP
+    - port: 3000
+      name: frontend
+      protocol: TCP
 
