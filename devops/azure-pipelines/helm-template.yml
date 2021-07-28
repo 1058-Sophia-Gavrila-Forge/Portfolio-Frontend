@@ -38,7 +38,7 @@ jobs:
             image.repository=${{ parameters.repository }}
             imagePullSecrets[0].name=${{ parameters.secretName }}
             image.tag=${{ parameters.imageTag }}
-            deploy.port=3000
+            deploy.port=5000
           arguments: |
             --atomic 
         displayName: 'Helm Deploy'
