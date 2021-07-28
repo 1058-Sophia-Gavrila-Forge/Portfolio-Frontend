@@ -1,5 +1,5 @@
 export const url = process.env.NODE_ENV === 'production'
-    ? '/'
+    ? process.env.URL_TO_API
     : 'http://localhost:8081'
 
 export const aboutMeUrl = url + "/aboutMe"
