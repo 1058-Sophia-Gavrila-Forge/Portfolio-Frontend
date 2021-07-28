@@ -1,73 +1,84 @@
-#header { background: linear-gradient(to right, rgb( 242, 105, 3), rgb(115, 165, 194), rgb(253, 181, 21));}
-
-#add-experience {
-    float: right;
+#header {
+  background: rgb(72,76,86)
+  /* background: rgb(185,185,186) */
+  /* background: rgb(253,181,21) */
+  /* background: rgb(115, 165, 194) */
+  /* background: rgb(242, 105, 38); */
 }
 
-h4 {color: white;}
+#add-experience {
+  float: right;
+}
 
-h6 {font-weight: bold;}
+h4 {
+  color: white;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+h6 {
+  font-weight: bold;
+}
 
 h6::after {
-    content: "*";
-    color: red;
+  content: "*";
+  color: red;
 }
 
 #header-work-experience {
-    background: linear-gradient(
-        to right,
-        rgb( 242, 105, 3),
-        rgb(115, 165, 194),
-        rgb(253, 181, 21));
+  background: rgb(242, 105, 38);
 }
 
 #add-other-work-experience {
-    float: right;
-    cursor: pointer;
-    margin-top: 5px;
+  float: right;
+  cursor: pointer;
+  margin-top: 5px;
 }
 
 #card-info {
-    margin-left: 10px;
-    cursor: pointer;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 #work-experience-textarea {
-    width: 100%;
-    height: 150px;
+  width: 100%;
+  height: 150px;
 }
 
 .form-input {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
 }
 
-.work-experience-textarea {height: 100px;}
+.work-experience-textarea {
+  height: 100px;
+}
 
 form {
-    margin: 20px;
-    padding: 15px;
+  margin: 20px;
+  padding: 15px;
 }
 
 #card-body {
-    max-height: 500px;
-    overflow-y: auto;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
 #work-experience-details {
-    float: right;
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
+  float: right;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
 }
 
-.oButton{
-    background-color:rgb( 242, 105, 3); 
-    border-color: rgb( 242, 105, 3);
+.oButton {
+  background-color: rgb(242, 105, 3);
+  border-color: rgb(242, 105, 3);
 }
 
-.oButton:hover{
-    background-color: rgb( 210, 105, 3);
-    border-color: rgb(210, 105, 3);
+.oButton:hover {
+  background-color: rgb(210, 105, 3);
+  border-color: rgb(210, 105, 3);
 }
+

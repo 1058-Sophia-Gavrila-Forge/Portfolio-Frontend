@@ -262,7 +262,7 @@ const RevatureWorkExperience = () => {
     return (
         <div className="container">
             <Card id="card-container">
-                <Card.Header id="header-work-experience">
+                <Card.Header id="header">
                     <h4>
                         Work Experience
                         <QuestionCircle id="card-info" onClick={handleShowDetails}/>

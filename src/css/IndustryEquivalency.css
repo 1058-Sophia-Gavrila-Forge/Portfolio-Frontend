@@ -1,41 +1,123 @@
 .fill-box {
-    width: 7em;
-    text-align: center;
+  width: 7em;
+  text-align: center;
 }
 
-.ring- { background: radial-gradient(circle, rgba(0,0,0,0) 8%, rgba(0,0,0,0.5) 10%, rgba(0,0,0,0.5) 15%, rgba(0,0,0,0) 18%); }
-.ring-2 { background: radial-gradient(circle, rgba(160,0,224,0) 28%, rgba(160,0,224,1) 30%, rgba(160,0,224,1) 40%, rgba(160,0,224,0) 42%); }
-.ring-3 { background: radial-gradient(circle, rgba(121,34,231,0) 31%, rgba(121,34,231,1) 33%, rgba(121,34,231,1) 43%, rgba(121,34,231,0) 45%); }
-.ring-4 { background: radial-gradient(circle, rgba(78,62,239,0) 33%, rgba(78,62,239,1) 35%, rgba(78,62,239,1) 45%, rgba(78,62,239,0) 47%); }
-.ring-5 { background: radial-gradient(circle, rgba(39,95,247,0) 36%, rgba(39,95,247,1) 38%, rgba(39,95,247,1) 48%, rgba(39,95,247,0) 50%); }
-.ring-6 { background: radial-gradient(circle, rgba(0,127,255,0) 38%, rgba(0,127,255,1) 40%, rgba(0,127,255,1) 50%, rgba(0,127,255,0) 52%); }
-.ring-7 { background: radial-gradient(circle, rgba(0,144,194,0) 41%, rgba(0,144,194,1) 43%, rgba(0,144,194,1) 53%, rgba(0,144,194,0) 55%); }
-.ring-8 { background: radial-gradient(circle, rgba(0,158,127,0) 43%, rgba(0,158,127,1) 45%, rgba(0,158,127,1) 55%, rgba(0,158,127,0) 57%); }
-.ring-9 { background: radial-gradient(circle, rgba(0,175,64,0) 46%, rgba(0,175,64,1) 48%, rgba(0,175,64,1) 58%, rgba(0,175,64,0) 60%); }
-.ring-10 { background: radial-gradient(circle, rgba(0,191,0,0) 48%, rgba(0,191,0,1) 50%, rgba(0,191,0,1) 60%, rgba(0,191,0,0) 62%); }
+.ring- {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 8%,
+    rgba(0, 0, 0, 0.5) 10%,
+    rgba(0, 0, 0, 0.5) 15%,
+    rgba(0, 0, 0, 0) 18%
+  );
+}
+.ring-2 {
+  background: radial-gradient(
+    circle,
+    rgba(160, 0, 224, 0) 28%,
+    rgba(160, 0, 224, 1) 30%,
+    rgba(160, 0, 224, 1) 40%,
+    rgba(160, 0, 224, 0) 42%
+  );
+}
+.ring-3 {
+  background: radial-gradient(
+    circle,
+    rgba(121, 34, 231, 0) 31%,
+    rgba(121, 34, 231, 1) 33%,
+    rgba(121, 34, 231, 1) 43%,
+    rgba(121, 34, 231, 0) 45%
+  );
+}
+.ring-4 {
+  background: radial-gradient(
+    circle,
+    rgba(78, 62, 239, 0) 33%,
+    rgba(78, 62, 239, 1) 35%,
+    rgba(78, 62, 239, 1) 45%,
+    rgba(78, 62, 239, 0) 47%
+  );
+}
+.ring-5 {
+  background: radial-gradient(
+    circle,
+    rgba(39, 95, 247, 0) 36%,
+    rgba(39, 95, 247, 1) 38%,
+    rgba(39, 95, 247, 1) 48%,
+    rgba(39, 95, 247, 0) 50%
+  );
+}
+.ring-6 {
+  background: radial-gradient(
+    circle,
+    rgba(0, 127, 255, 0) 38%,
+    rgba(0, 127, 255, 1) 40%,
+    rgba(0, 127, 255, 1) 50%,
+    rgba(0, 127, 255, 0) 52%
+  );
+}
+.ring-7 {
+  background: radial-gradient(
+    circle,
+    rgba(0, 144, 194, 0) 41%,
+    rgba(0, 144, 194, 1) 43%,
+    rgba(0, 144, 194, 1) 53%,
+    rgba(0, 144, 194, 0) 55%
+  );
+}
+.ring-8 {
+  background: radial-gradient(
+    circle,
+    rgba(0, 158, 127, 0) 43%,
+    rgba(0, 158, 127, 1) 45%,
+    rgba(0, 158, 127, 1) 55%,
+    rgba(0, 158, 127, 0) 57%
+  );
+}
+.ring-9 {
+  background: radial-gradient(
+    circle,
+    rgba(0, 175, 64, 0) 46%,
+    rgba(0, 175, 64, 1) 48%,
+    rgba(0, 175, 64, 1) 58%,
+    rgba(0, 175, 64, 0) 60%
+  );
+}
+.ring-10 {
+  background: radial-gradient(
+    circle,
+    rgba(0, 191, 0, 0) 48%,
+    rgba(0, 191, 0, 1) 50%,
+    rgba(0, 191, 0, 1) 60%,
+    rgba(0, 191, 0, 0) 62%
+  );
+}
 
 .tall-text {
-    width: 7em;
-    line-height: 7em;
+  width: 7em;
+  line-height: 7em;
 }
 .eq-label-text {
-    width: 6.5em;
+  width: 6.5em;
 }
 
-#header-industry-equivalence { background: linear-gradient(to right, rgb( 242, 105, 3), rgb(115, 165, 194), rgb(253, 181, 21)); }
+#header-industry-equivalence {
+  background: rgb(242, 105, 38);
+}
 
 #delete-equivalency:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #edit-equivalency {
-    float: right;
-    cursor: pointer;
-    margin-top: 5px;
+  float: right;
+  cursor: pointer;
+  margin-top: 5px;
 }
 
 #add-equivalency {
-    float: right;
-    cursor: pointer;
-    margin-top: 5px;
+  float: right;
+  cursor: pointer;
+  margin-top: 5px;
 }

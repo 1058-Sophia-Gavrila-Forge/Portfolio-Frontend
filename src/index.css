@@ -8,6 +8,13 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif !important;
+}
+
+
+#header {
+  /* background: rgb(72,76,86) */
+  background: rgb(185,185,186)
+  /* background: rgb(253,181,21) */
+  /* background: rgb(115, 165, 194) */
 }

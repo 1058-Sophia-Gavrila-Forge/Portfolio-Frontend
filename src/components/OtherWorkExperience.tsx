@@ -263,7 +263,7 @@ const OtherWorkExperience = () => {
 
         {/* this is the card for the other work experience component */}
             <Card id="card-container">
-                <Card.Header id="header-work-experience">
+                <Card.Header id="header">
                     <h4>
                         Other Work Experience
                         <QuestionCircle id="card-info" onClick={handleShowDetails}/>

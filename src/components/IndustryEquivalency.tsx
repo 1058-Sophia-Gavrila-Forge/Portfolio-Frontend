@@ -282,7 +282,7 @@ const IndustryEquivalency = () => {
     return (
         <div className="container">
             <Card id="card-container">
-                <Card.Header id="header-industry-equivalence">
+                <Card.Header id="header">
                     <h4>
                         Industry Equivalency
                         <QuestionCircle id="card-info" onClick={handleShowDetails} />

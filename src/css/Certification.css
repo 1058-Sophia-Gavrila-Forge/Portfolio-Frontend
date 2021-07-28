@@ -1,47 +1,42 @@
 h4 {
-    color: white;
-  }
-  
-  h6 {
-    font-weight: bold;
-  }
-  
-  h6::after {
-    content: "*";
-    color: red;
-  }
+  color: white;
+}
 
-  .publicUrl::after {
-      content: "";
-  }
-  
-  #header-certifcation {
-    background: linear-gradient(
-      to right,
-      rgb(242, 105, 3),
-      rgb(115, 165, 194),
-      rgb(253, 181, 21)
-    );
-  }
-  
-  #add-certification {
-    float: right;
-    cursor: pointer;
-    margin-top: 5px;
-  }
-  
-  .form-input {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    margin: 20px;
-    padding: 15px;
-  }
-  
-  #cardHeaderCertification {
-    background: "white";
-    border-bottom: "5px solid rgb(115, 165, 194)";
-  }
+h6 {
+  font-weight: bold;
+}
+
+h6::after {
+  content: "*";
+  color: red;
+}
+
+.publicUrl::after {
+  content: "";
+}
+
+#header-certifcation {
+  background: rgb(242, 105, 38);
+}
+
+#add-certification {
+  float: right;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+form {
+  margin: 20px;
+  padding: 15px;
+}
+
+#cardHeaderCertification {
+  background: "white";
+  border-bottom: "5px solid rgb(115, 165, 194)";
+}

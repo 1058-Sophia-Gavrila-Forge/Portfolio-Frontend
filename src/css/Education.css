@@ -1,52 +1,47 @@
 h4 {
-    color: white;
-  }
-  
-  h6 {
-    font-weight: bold;
-  }
-  
-  h6::after {
-    content: "*";
-    color: red;
-  }
+  color: white;
+}
 
-  .logoUrl::after {
-      content: "";
-  }
-  
-  #header-project {
-    background: linear-gradient(
-      to right,
-      rgb(242, 105, 3),
-      rgb(115, 165, 194),
-      rgb(253, 181, 21)
-    );
-  }
-  
-  #add-education {
-    float: right;
-    cursor: pointer;
-    margin-top: 5px;
-  }
-  
-  #card-info-education {
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
-  .form-input {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    margin: 20px;
-    padding: 15px;
-  }
-  
-  #cardHeaderEducation {
-    background: "white";
-    border-bottom: "5px solid rgb(115, 165, 194)";
-  }
+h6 {
+  font-weight: bold;
+}
+
+h6::after {
+  content: "*";
+  color: red;
+}
+
+.logoUrl::after {
+  content: "";
+}
+
+/* #header-project {
+  background: rgb(242, 105, 38);
+} */
+
+#add-education {
+  float: right;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#card-info-education {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+form {
+  margin: 20px;
+  padding: 15px;
+}
+
+#cardHeaderEducation {
+  background: "white";
+  border-bottom: "5px solid rgb(115, 165, 194)";
+}

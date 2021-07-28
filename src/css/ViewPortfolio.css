@@ -28,3 +28,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+.flag:focus, .flag:active {
+    outline:none !important;
+    box-shadow: none !important;
+}
+
+.flagPopover {
+    /* background-color: rgb(115,165,194); */
+    background-color:rgb(242,105,38);
+    font-weight: 600; 
+    color: white;
+}

@@ -72,7 +72,7 @@ const CertificationContainer = () => {
             </Modal>
 
             <Card id="card-container">
-                <Card.Header id="header-project">
+                <Card.Header id="header">
                     <h4>
                         Certification
                         <PlusCircle id="add-certification" onClick={handleShowCreationModal} />
