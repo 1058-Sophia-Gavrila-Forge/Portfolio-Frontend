@@ -2,9 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import validate from './FormValidation';
 import useForm from './ValidationHook';
 
-const AccountRegistration = () => {
+const AccountRegistration = ({ hideModal } : any) => {
 
-    const {inputs, handleInputChange, handleSubmit, errors} = useForm({fname:'', lname:'', email:'', password:'', confirmPassword: ''}, validate)
+    const {inputs, handleInputChange, handleSubmit, errors} = useForm({fname:'', lname:'', email:'', password:'', confirmPassword: ''}, validate, hideModal)
 
     const error: {[key: string]: any} = errors
 

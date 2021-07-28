@@ -8,6 +8,7 @@ import { useLocation } from 'react-router-dom'
 import queryString from 'query-string'
 import { CSSProperties } from 'react'
 import { useCookies } from 'react-cookie'
+import {toast} from "react-toastify";
 import { portfolioUrl } from '../api/api'
 
 const Portfoliodetails = (props: any) => {
@@ -58,8 +59,7 @@ const Portfoliodetails = (props: any) => {
          e.preventDefault()
 
          if (!approved && !feedback){
-
-            alert("Feedback must be provided if rejecting the portfolio. Your changes are not saved")
+             toast.error("Feedback must be provided if rejecting the portfolio. Your changes are not saved")
          }
          else{
         // this will be axios put to update portfolios back end

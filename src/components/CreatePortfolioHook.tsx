@@ -1,12 +1,15 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { useCookies } from 'react-cookie';
+import {toast} from "react-toastify";
+import { useHistory } from "react-router-dom";
 import {portfolioUrl} from "../api/api";
 
 const useForm = (initialValues: any, portfolioValidate: any) => {
     const [inputs, setInputs] = useState(initialValues)
     const [errors, setErrors] = useState({})
     const [cookies, setCookies] = useCookies()
+    const history = useHistory();
 
     const handleSubmit = (event: any) => {
         event.preventDefault()
@@ -15,15 +18,15 @@ const useForm = (initialValues: any, portfolioValidate: any) => {
         const noErrors = Object.keys(validationErrors).length === 0
         setErrors(validationErrors)
         if (noErrors) {
-            axios.post(portfolioUrl, inputs, cookies['user'])
-            .then(response => {
-                alert("Portfolio Created")
-                setCookies('portfolio', response.data, {path: "/"})
-                window.location.pathname = "./portfolio"
-            })
-            .catch(error => {
-                alert('Error ' + error)
-            })
+            axios.post(`${portfolioUrl}`, inputs, cookies['user'])
+                .then(response => {
+                    setCookies('portfolio', response.data, {path: "/"})
+                    toast.success("Portfolio created")
+                    history.push('/portfolio')
+                })
+                .catch(error => {
+                    toast.error(error.message)
+                })
             
         } else {
             console.log("Errors, please try again", validationErrors)

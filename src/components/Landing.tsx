@@ -21,7 +21,7 @@ const Landing = () => {
                             <Modal.Title>Account Registration</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            <AccountRegistration />
+                            <AccountRegistration hideModal={handleClose} />
                         </Modal.Body>
                         <Modal.Footer>
                             <Button variant="secondary" onClick={handleClose}>Close</Button>

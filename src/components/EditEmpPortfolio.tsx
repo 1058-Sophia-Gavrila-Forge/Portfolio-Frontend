@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import RevatureWorkExp from './RevatureWorkExperience';
 import "../css/EditEmpPortfolio.css"
 import { Link } from 'react-router-dom';
@@ -18,7 +18,6 @@ const EditEmpPortfolio = () => {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [cookies, setCookie, removeCookie] = useCookies();
-
     const handleBack = () => {
         removeCookie('portfolio', { maxAge: 0 })
     }
@@ -46,6 +45,9 @@ const EditEmpPortfolio = () => {
                 </Link>
                 <Link to="/view">
                     <button className="btn btn-primary m-1">View Portfolio</button>
+                </Link>
+                <Link to={{ pathname: `${portfolioUrl}/full/${cookies['portfolio'].id}` }} target="_blank" >
+                    <button className="btn btn-primary m-1">Export</button>
                 </Link>
                 <Link to="/list">
                     <Button variant="primary" className="m-1" onClick={() => handleBack()}>Back</Button>

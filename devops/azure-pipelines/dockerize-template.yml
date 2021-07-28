@@ -9,8 +9,6 @@ parameters:
     type: string 
   - name: 'dockerPath' #docker file path
     type: string
-  - name: 'dockerContext'
-    type: string
 
 jobs:
   - job:
@@ -23,5 +21,5 @@ jobs:
           command: 'buildAndPush'
           Dockerfile: '${{ parameters.dockerPath }}'
           tags: '${{ parameters.imageTag }}'
-          buildContext: ${{ parameters.dockerContext }}
+          buildContext: $(Build.Repository.LocalPath)
         displayName: Docker build and push

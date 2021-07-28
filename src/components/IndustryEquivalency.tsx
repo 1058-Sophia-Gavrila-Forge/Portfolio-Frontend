@@ -6,6 +6,7 @@ import { useCookies } from 'react-cookie'
 import { Card, Button, Modal, ModalBody } from 'react-bootstrap';
 import { QuestionCircle, PlusCircle, Pencil, XCircle } from 'react-bootstrap-icons';
 import { Tooltip } from 'reactstrap';
+import {toast} from "react-toastify";
 import {equivUrl} from "../api/api";
 
 // JSON INTERFACES
@@ -134,9 +135,9 @@ const IndustryEquivalency = () => {
     /* ---------------------------------------------------------------- */
     const handleAddShow = () => {
         if (skillSet.length >= 5) {
-            alert("No more than 5 skills can be added to the Industry Equivalency Section.");
+            toast.error("No more than 5 skills can be added to the Industry Equivalency Section.");
             return;
-        };
+        }
         setShowAdd(true);
     };
     const handleAddClose = () => {

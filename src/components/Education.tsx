@@ -6,6 +6,7 @@ import { PlusCircle, QuestionCircle } from "react-bootstrap-icons";
 import { Tooltip } from "reactstrap";
 import { NumberLiteralType } from "typescript";
 import "../css/Project.css";
+import {toast} from "react-toastify";
 import {educationUrl} from "../api/api";
 
 const Education = () => {
@@ -219,7 +220,7 @@ const Education = () => {
                         Education and Certifications
                         <QuestionCircle
                             id="card-info"
-                            onClick={() => alert(messageDetails)}
+                            onClick={() => toast.info(messageDetails)}
                         />
                         <PlusCircle id="add-project" onClick={handleShowModal} />
                         <Tooltip
