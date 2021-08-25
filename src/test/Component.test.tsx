@@ -2,10 +2,10 @@ import '@testing-library/jest-dom';
 import { render, screen, waitFor } from "@testing-library/react";
 import * as rcookies from 'react-cookie';
 import { BrowserRouter, Route } from "react-router-dom";
-import Adminpage from "../components/Adminpage";
-import validate from "../components/FormValidation";
-import HonorAwards from "../components/HonorAward";
-import PortfolioList from "../components/PortfolioList";
+import Adminpage from "../components/Admin/Adminpage";
+import validate from "../components/Account/FormValidation";
+import HonorAwards from "../components/Honors/HonorAward"; 
+import PortfolioList from "../components/Portfolio/PortfolioList/PortfolioList";
 import ViewPortfolio from "../components/ViewPortfolio/ViewPortfolio";
 import { fullPortfolioTestObj, testAdminFname, testGeneralUser, testPortfolioList } from "./TestUserComponent";
 

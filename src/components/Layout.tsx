@@ -2,10 +2,10 @@ import React from "react";
 import { Route} from "react-router-dom";
 import Landing from './Landing';
 import ViewPortfolio from './ViewPortfolio/ViewPortfolio';
-import EditEmpPortfolio from './EditEmpPortfolio';
-import PortfolioList from "./PortfolioList";
-import Adminpage from "./Adminpage";
-import Portfoliodetails from "./Portfoliodetails";
+import EditEmpPortfolio from './Portfolio/PortfolioEdit/EditEmpPortfolio';
+import PortfolioList from "./Portfolio/PortfolioList/PortfolioList";
+import Adminpage from "./Admin/Adminpage";
+import Portfoliodetails from "./Portfolio/Portfoliodetails";
 
 function Layout() {
     return (
